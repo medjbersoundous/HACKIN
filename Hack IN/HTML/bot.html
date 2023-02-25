@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/bot.css">
+    <title>BOT RESCUE</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="/HTML/home.html"><img src="/Assets/Rectangle 20.png" alt="" ></a> 
+        <div>
+            <a href="">HOME</a>
+            <a href="">CHAT</a>
+            <a href="">FORUMS</a>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <h1>Public</h1>
+            <a href="">Question</a>
+            <hr>
+            <a href="">Tags</a>
+            <hr>
+            <a href="">Engineers</a>
+            <hr>
+        </div>
+        <section class="first" >
+            <div id="p">
+                <p>Something's bothering you about your bot ?</p>
+            </div>
+            <div class="right">
+
+                <div>
+                    <div id="diff">
+                        <div id="A">
+                            <h1>0 Answers</h1>
+                            <h1>0 Views</h1>
+                            <h1>0 Votes</h1>
+                        </div>
+                        <div id="user">
+                            <h1>User_1:</h1>
+                            <p>my robot is acting so weird <br> it all began this morning when i was using it to...</p>
+                            <a href="">read more...</a>
+                        </div>
+                    </div>
+                    <div id="reseaux">
+                        <h2>Comments</h2>
+                        <h2>Share</h2>
+                        <h2>Report</h2>
+                        <h2>Save</h2>
+                    </div>
+                    <input type="text" placeholder="what are your thoughts?">
+                </div>
+                <div id="user2">
+                    <h1>User_2:</h1>
+                    <p>i'm really happy User_1 made it. <br> it makes two structs with the same tag name and content compatible</p>
+                    <a href="">read more...</a>
+                </div>
+                <div id="user2">
+                    <h1>User_3:</h1>
+                    <p>Yes, this is very nice</p>
+                </div>
+                <a href="" id="more">SHOW MORE..</a>
+            </div>
+        </section>
+        <hr>
+    </main>
+    
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    
+</body>
+</html>

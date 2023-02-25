@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="Sign-Up">
+      <link rel="stylesheet" href="../CSS/SignUp.css" />
+      
+      <h1>Sign Up</h1>
+      <h4>Already have an account? <a href="LogIn.html">Log In</a></h4>
+
+      <form>
+        <div class="first-slide">
+        
+            <label>First Name</label>
+            <input type="text" id="firstname" name="firstname" required />
+            
+            <label>Last Name</label>
+            <input type="text" id="lastname" name="lastname" required />
+
+            <label>Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" />
+
+            <label>Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <label>Confirm Password</label>
+            <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            />
+        </div>
+
+        <div class="second-slide">
+            <label for="user-type">Are you an engineer?</label>
+            <select name="user-type" id="user-type">
+                <option value="engineer">Yes</option>
+                <option value="normal">No</option>
+            </select>
+
+            <div id="engineer-field" style="display: none">
+                <label for="certificate">Certificate</label>
+                <input type="text" name="certificate" id="certificate" required />
+
+                <label for="engineering-field">Engineering Field</label>
+                    <select name="engineering-field" id="engineering-field">
+                        <option value="field 1">Field 1</option>
+                        <option value="field 2">Field 2</option>
+                        <option value="field 3">Field 3</option>
+                    </select>
+
+                <label for="experience ">Experience</label>
+                <input type="number" id="experience" name="experience" />
+            </div>
+
+
+
+            <div class="normal-field">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required />
+
+                <label for="robot-type">Robot Type</label>
+                <input type="text" id="robot-type" name="robot-type" required />
+            </div>
+        </div>
+
+        <div class="third-slide">
+
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <script>
+        var userTypeSelect = document.getElementById("user-type");
+        var engineerFields = document.getElementById("engineer-field");
+        var normalFields = document.getElementById("normal-field");
+        
+        userTypeSelect.addEventListener("change", function() {
+          if (userTypeSelect.value === "Yes") {
+            engineerFields.style.display = "block";
+            normalFields.style.display = "none";
+          } else {
+            engineerFields.style.display = "none";
+            normalFields.style.display = "block";
+          }
+        });
+      </script>
+
+      <p>
+        By clicking Submit , you are agreeing to our
+        <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </body>
+</html>

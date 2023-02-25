@@ -1,0 +1,134 @@
+body {
+  background-color: #FBF3F2;
+  font-family: "Roboto", sans-serif;
+  background-color: #00121E;
+}
+
+.SignUP {
+  width: 360px;
+  height: 700px;
+  border-radius: 3px;
+  text-align: center;
+  border-radius: 13px;
+}
+
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+form input {
+  width: 100%;
+  margin-top: 4px;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background-color: #FBF3F2;
+}
+
+input[type=button] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #fa991c;
+  color: white;
+  font-size: 18px;
+  border: none;
+}
+input .info{
+  border: none;
+}
+p {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 15px;
+}/*# sourceMappingURL=SignUp.css.map */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pic{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  margin-top: 7%;
+  margin-left: 10%;
+}
+.signuppanel{
+  padding-right: 150px;
+  padding-left: 150px;
+  background-color: white;
+  border-radius: 15px;
+}
+.pic h1{
+  color: white;
+}
+.SignUP h4{
+  color: #1C7690;
+}
+.SignUP h2{
+  color: #1C7690;
+}
+.verif{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.verif input{
+  background-color: #D9D9D9 ;
+  width: 30px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+ 
+ 
+}
+.SignUP button{
+  background-color: #FC981C;
+  border: none;
+  width: 304px;
+  height: 40px;
+  color: white;
+  margin-top: 30%;
+  margin-left: 5%;
+  font-size: medium;
+  border-radius: 10px;
+}
+.pic p{
+  font-size: x-large;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+.pic button{
+  width: 304px;
+  height: 40px;
+  margin-top: 25%;
+  background-color: transparent;
+  border-color: #FC981C;
+  color: #FC981C;
+  border-radius: 20px;
+
+}
+.sig{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
